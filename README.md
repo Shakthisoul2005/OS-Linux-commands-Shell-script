@@ -200,7 +200,11 @@ keerthivasan@Aizen:~$ cat newfile | grep -i -c "hello"
 grep -R ubuntu /etc
 ## OUTPUT
 ```
-
+/etc/cloud/templates/ntp.conf.ubuntu.tmpl:# pool ntp.ubuntu.com
+/etc/cloud/templates/sources.list.ubuntu.deb822.tmpl:##      /etc/cloud/templates/sources.list.ubuntu.deb822.tmpl
+/etc/cloud/templates/sources.list.ubuntu.deb822.tmpl:# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+/etc/cloud/templates/sources.list.ubuntu.deb822.tmpl:Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+/etc/cloud/templates/sources.list.ubuntu.deb822.tmpl:Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 ```
 
 grep -w -n world newfile   
