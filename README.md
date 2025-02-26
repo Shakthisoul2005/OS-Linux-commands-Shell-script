@@ -608,26 +608,120 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 ```
-
+keerthivasan@Aizen:~$ tar -xvf backup.tar
+argshift.sh
+argshift1.sh
+backup.tar.gz
+backupdir/
+backupdir/backup.tar
+casecheck.sh
+data.dat
+elifcheck.sh
+exread.sh
+exread1.sh
+file
+file1
+file11
+file2
+file21
+file22
+file23
+forbreak.sh
+forcontiune.sh
+forctype.sh
+forctype1.sh
+forin1.sh
+forin2.sh
+forin3.sh
+forinfile.sh
+fornested1.sh
+funcex.sh
+herecheck.txt
+ifcompound.sh
+ifnested.sh
+iftest.sh
+my-script.sh
+nc.awk
+newfile
+palindrome.sh
+psswdperm.sh
+saveetha/
+saveetha/fie1
+saveetha/file1
+saveetha/SEC/
+scriptest.sh
+strcomp.sh
+testfile
+trail/
+trail/file1
+untiltest.sh
+urllist.txt
+whiletest
+whiletest.sh
 ```
 
 tar -xvf backup.tar
 ## OUTPUT
 ```
-
+keerthivasan@Aizen:~$ tar -xvf backup.tar
+argshift.sh
+argshift1.sh
+backup.tar.gz
+backupdir/
+backupdir/backup.tar
+casecheck.sh
+data.dat
+elifcheck.sh
+exread.sh
+exread1.sh
+file
+file1
+file11
+file2
+file21
+file22
+file23
+forbreak.sh
+forcontiune.sh
+forctype.sh
+forctype1.sh
+forin1.sh
+forin2.sh
+forin3.sh
+forinfile.sh
+fornested1.sh
+funcex.sh
+herecheck.txt
+ifcompound.sh
+ifnested.sh
+iftest.sh
+my-script.sh
+nc.awk
+newfile
+palindrome.sh
+psswdperm.sh
+saveetha/
+saveetha/fie1
+saveetha/file1
+saveetha/SEC/
+scriptest.sh
+strcomp.sh
+testfile
+trail/
+trail/file1
+untiltest.sh
+urllist.txt
+whiletest
+whiletest.sh
 ```
 
 gzip backup.tar
 ls .gz
 ## OUTPUT
 ```
-
-```
-
-gunzip backup.tar.gz
-## OUTPUT
-```
-
+keerthivasan@Aizen:~$ gzip backup.tar
+ls *.gz
+backup.tar.gz
 ```
  
 # Shell Script
