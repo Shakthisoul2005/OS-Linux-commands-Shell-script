@@ -22,6 +22,7 @@ Testing the commands for the desired output.
 
 # COMMANDS:
 ### Create the following files file1, file2 as follows:
+
 cat > file1
 ```
 chanchal singhvi
@@ -39,38 +40,76 @@ lalit chowdury
 s.n. dasgupta
 ^d
 ```
+
 ### Display the content of the files
+
 cat < file1
 ## OUTPUT
-
-
+```
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+```
 
 cat < file2
 ## OUTPUT
-
+```
+anil aggarwal
+barun sengupta
+c.k. shukla
+lalit chowdury
+s.n. dasgupta
+```
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+```
+keerthivasan@Aizen:~$ cmp file1 file2
+file1 file2 differ: byte 1, line 1
+```
  
 comm file1 file2
  ## OUTPUT
+```
+keerthivasan@Aizen:~$ comm file1 file2
 
- 
+        anil aggarwal
+        barun sengupta
+                c.k. shukla
+chanchal singhvi
+        lalit chowdury
+                s.n. dasgupta
+sumit chakrobarty
+```
+
 diff file1 file2
 ## OUTPUT
-
+```
+keerthivasan@Aizen:~$ diff file1 file2
+1c1,2
+<
+---
+> anil aggarwal
+> barun sengupta
+3c4
+< chanchal singhvi
+---
+> lalit chowdury
+5d5
+< sumit chakrobarty
+```
 
 #Filters
-
 ### Create the following files file11, file22 as follows:
-
 cat > file11
 ```
 Hello world
 This is my world
 ^d
 ```
+
 cat > file22
 ```
 1001 | Ram | 10000 | HR
@@ -79,113 +118,154 @@ cat > file22
 ^d
 ```
 
-
 cut -c1-3 file11
 ## OUTPUT
-
-
-
+```
+keerthivasan@Aizen:~$ cut -c1-3 file11
+Hel
+Thi
+```
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$  cut -d "|" -f 1 file22
+1001
+1001
+1002
+1003
+1005
+1004
+```
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+```
+keerthivasan@Aizen:~$ cut -d "|" -f 2 file22
+ Ram
+ Ram
+ tom
+ Joe
+ Sam
+ Sit
+```
 
-
+cat > newfile 
+```
+Hello world
+hello world
+````
 cat < newfile 
 ```
 Hello world
 hello world
-^d
-````
-cat > newfile 
-Hello world
-hello world
+```
  
 grep Hello newfile 
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$ grep Hello newfile
+Hello world
+```
 
 grep hello newfile 
 ## OUTPUT
-
-
-
+```
+keerthivasan@Aizen:~$ grep hello newfile
+hello world
+```
 
 grep -v hello newfile 
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$ grep hello newfile
+hello world
+```
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
-
-
+```
+keerthivasan@Aizen:~$ cat newfile | grep -i "hello"
+Hello world
+hello world
+```
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
-
-
+```
+keerthivasan@Aizen:~$ cat newfile | grep -i -c "hello"
+2
+```
 
 grep -R ubuntu /etc
 ## OUTPUT
+```
 
-
+```
 
 grep -w -n world newfile   
 ## OUTPUT
+```
+keerthivasan@Aizen:~$ grep -w -n world newfile
+1:Hello world
+2:hello world
+```
 
-
-cat < newfile 
+cat > newfile 
 ```
 Hello world
 hello world
 Linux is world number 1
 Unix is predecessor
 Linux is best in this World
-^d
 ```
 
-cat > newfile
+cat < newfile
 ```
 Hello world
 hello world
 Linux is world number 1
 Unix is predecessor
 Linux is best in this World
-^d
  ```
+
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$ egrep -w 'Hello|hello' newfile
+Hello world
+hello world
+```
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$ egrep -w '(H|h)ello' newfile
+Hello world
+hello world
+```
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
-
-
+```
+keerthivasan@Aizen:~$ egrep -w '(H|h)ell[a-z]' newfile
+Hello world
+hello world
+```
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$ egrep '(^hello)' newfile
+hello world
+```
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
-
+```
+keerthivasan@Aizen:~$ egrep '(world$)' newfile
+Hello world
+hello world```
 
 egrep '(World$)' newfile 
 ## OUTPUT
