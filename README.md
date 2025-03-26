@@ -66,14 +66,14 @@ s.n. dasgupta
 cmp file1 file2
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ cmp file1 file2
+@Aizen:~$ cmp file1 file2
 file1 file2 differ: byte 1, line 1
 ```
  
 comm file1 file2
  ## OUTPUT
 ```
-keerthivasan@Aizen:~$ comm file1 file2
+@Aizen:~$ comm file1 file2
 
         anil aggarwal
         barun sengupta
@@ -87,7 +87,7 @@ sumit chakrobarty
 diff file1 file2
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ diff file1 file2
+@Aizen:~$ diff file1 file2
 1c1,2
 <
 ---
@@ -121,7 +121,7 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ cut -c1-3 file11
+@Aizen:~$ cut -c1-3 file11
 Hel
 Thi
 ```
@@ -129,7 +129,7 @@ Thi
 cut -d "|" -f 1 file22
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$  cut -d "|" -f 1 file22
+@Aizen:~$  cut -d "|" -f 1 file22
 1001
 1001
 1002
@@ -141,7 +141,7 @@ keerthivasan@Aizen:~$  cut -d "|" -f 1 file22
 cut -d "|" -f 2 file22
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ cut -d "|" -f 2 file22
+@Aizen:~$ cut -d "|" -f 2 file22
  Ram
  Ram
  tom
@@ -164,7 +164,7 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ grep Hello newfile
+@Aizen:~$ grep Hello newfile
 Hello world
 ```
 
@@ -178,7 +178,7 @@ hello world
 grep -v hello newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ grep hello newfile
+@Aizen:~$ grep hello newfile
 hello world
 ```
 
@@ -193,7 +193,7 @@ hello world
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ cat newfile | grep -i -c "hello"
+@Aizen:~$ cat newfile | grep -i -c "hello"
 2
 ```
 
@@ -210,7 +210,7 @@ grep -R ubuntu /etc
 grep -w -n world newfile   
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ grep -w -n world newfile
+@Aizen:~$ grep -w -n world newfile
 1:Hello world
 2:hello world
 ```
@@ -236,7 +236,7 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep -w 'Hello|hello' newfile
+@Aizen:~$ egrep -w 'Hello|hello' newfile
 Hello world
 hello world
 ```
@@ -244,7 +244,7 @@ hello world
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep -w '(H|h)ello' newfile
+@Aizen:~$ egrep -w '(H|h)ello' newfile
 Hello world
 hello world
 ```
@@ -252,7 +252,7 @@ hello world
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep -w '(H|h)ell[a-z]' newfile
+@Aizen:~$ egrep -w '(H|h)ell[a-z]' newfile
 Hello world
 hello world
 ```
@@ -260,14 +260,14 @@ hello world
 egrep '(^hello)' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep '(^hello)' newfile
+@Aizen:~$ egrep '(^hello)' newfile
 hello world
 ```
 
 egrep '(world$)' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep '(world$)' newfile
+@Aizen:~$ egrep '(world$)' newfile
 Hello world
 hello world
 ```
@@ -275,14 +275,14 @@ hello world
 egrep '(World$)' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep '(World$)' newfile
+@Aizen:~$ egrep '(World$)' newfile
 Linux is best in this World
 ```
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep '((W|w)orld$)' newfile
+@Aizen:~$ egrep '((W|w)orld$)' newfile
 Hello world
 hello world
 Linux is best in this World
@@ -291,28 +291,28 @@ Linux is best in this World
 egrep '[1-9]' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep '[1-9]' newfile
+@Aizen:~$ egrep '[1-9]' newfile
 Linux is world number 1
 ```
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep 'Linux.*world' newfile
+@Aizen:~$ egrep 'Linux.*world' newfile
 Linux is world number 1
 ```
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep 'Linux.*World' newfile
+@Aizen:~$ egrep 'Linux.*World' newfile
 Linux is best in this World
 ```
 
 egrep l{2} newfile
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ egrep l{2} newfile
+@Aizen:~$ egrep l{2} newfile
 Hello world
 hello world
 ```
@@ -320,7 +320,7 @@ hello world
 egrep 's{1,2}' newfile
 ## OUTPUT 
 ```
-keerthivasan@Aizen:~$ egrep 's{1,2}' newfile
+@Aizen:~$ egrep 's{1,2}' newfile
 Linux is world number 1
 Unix is predecessor
 Linux is best in this World
@@ -341,21 +341,21 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed -n -e '3p' file23
+@Aizen:~$ sed -n -e '3p' file23
 1002 | tom |  5000 | Admin
 ```
 
 sed -n -e '$p' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed -n -e '$p' file23
+@Aizen:~$ sed -n -e '$p' file23
 1001 | Ram | 10000 | HR
 ```
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed  -e 's/Ram/Sita/' file23
+@Aizen:~$ sed  -e 's/Ram/Sita/' file23
 1001 | Sita | 10000 | HR
 1001 | Sita | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -370,7 +370,7 @@ keerthivasan@Aizen:~$ sed  -e 's/Ram/Sita/' file23
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed  -e '2s/Ram/Sita/' file23
+@Aizen:~$ sed  -e '2s/Ram/Sita/' file23
 1001 | Ram | 10000 | HR
 1001 | Sita | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -384,7 +384,7 @@ keerthivasan@Aizen:~$ sed  -e '2s/Ram/Sita/' file23
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed  '/tom/s/5000/6000/' file23
+@Aizen:~$ sed  '/tom/s/5000/6000/' file23
 1001 | Ram | 10000 | HR
 1001 | Ram | 10000 | HR
 1002 | tom |  6000 | Admin
@@ -398,7 +398,7 @@ keerthivasan@Aizen:~$ sed  '/tom/s/5000/6000/' file23
 sed -n -e '1,5p' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed -n -e '1,5p' file23
+@Aizen:~$ sed -n -e '1,5p' file23
 1001 | Ram | 10000 | HR
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -409,7 +409,7 @@ keerthivasan@Aizen:~$ sed -n -e '1,5p' file23
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed -n -e '2,/Joe/p' file23
+@Aizen:~$ sed -n -e '2,/Joe/p' file23
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
@@ -418,7 +418,7 @@ keerthivasan@Aizen:~$ sed -n -e '2,/Joe/p' file23
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed -n -e '/tom/,/Joe/p' file23
+@Aizen:~$ sed -n -e '/tom/,/Joe/p' file23
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
 ```
@@ -426,7 +426,7 @@ keerthivasan@Aizen:~$ sed -n -e '/tom/,/Joe/p' file23
 seq 10 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ seq 10
+@Aizen:~$ seq 10
 1
 2
 3
@@ -442,7 +442,7 @@ keerthivasan@Aizen:~$ seq 10
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ seq 10 | sed -n '4,6p'
+@Aizen:~$ seq 10 | sed -n '4,6p'
 4
 5
 6
@@ -451,7 +451,7 @@ keerthivasan@Aizen:~$ seq 10 | sed -n '4,6p'
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ seq 10 | sed -n '2,~4p'
+@Aizen:~$ seq 10 | sed -n '2,~4p'
 2
 3
 4
@@ -460,7 +460,7 @@ keerthivasan@Aizen:~$ seq 10 | sed -n '2,~4p'
 seq 3 | sed '2a hello'
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ seq 3 | sed '2a hello'
+@Aizen:~$ seq 3 | sed '2a hello'
 1
 2
 hello
@@ -470,7 +470,7 @@ hello
 seq 2 | sed '2i hello'
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ seq 2 | sed '2i hello'
+@Aizen:~$ seq 2 | sed '2i hello'
 1
 hello
 2
@@ -485,7 +485,7 @@ seq 10 | sed '2,9c hello'
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sed -n '2,4{s/^/$/;p}' file23
+@Aizen:~$ sed -n '2,4{s/^/$/;p}' file23
 $1001 | Ram | 10000 | HR
 $1002 | tom |  5000 | Admin
 $1003 | Joe |  7000 | Developer
@@ -503,7 +503,7 @@ cat > file21
 sort file21
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sort file21
+@Aizen:~$ sort file21
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
@@ -524,7 +524,7 @@ cat > file22
 uniq file22
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ uniq file22
+@Aizen:~$ uniq file22
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
@@ -536,7 +536,7 @@ keerthivasan@Aizen:~$ uniq file22
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
 ```
-keerthivasan@Aizen:~$ cat file23 | tr [:lower:] [:upper:]
+@Aizen:~$ cat file23 | tr [:lower:] [:upper:]
 1001 | RAM | 10000 | HR
 1001 | RAM | 10000 | HR
 1002 | TOM |  5000 | ADMIN
@@ -564,7 +564,7 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 ```
-keerthivasan@Aizen:~$ cat urllist.txt | tr -d ' '
+@Aizen:~$ cat urllist.txt | tr -d ' '
 www.yahoo.com
 www.google.com
 www.mrcet....com
@@ -574,7 +574,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 ```
 www.mrcet....com
-keerthivasan@Aizen:~$ cat urllist.txt | tr -d ' ' | tr -s '.'
+@Aizen:~$ cat urllist.txt | tr -d ' ' | tr -s '.'
 www.yahoo.com
 www.google.com
 www.mrcet.com
@@ -584,7 +584,7 @@ www.mrcet.com
 tar -cvf backup.tar *
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ tar -cvf backup.tar *
+@Aizen:~$ tar -cvf backup.tar *
 backupdir/
 file
 file1
@@ -608,7 +608,7 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ tar -xvf backup.tar
+@Aizen:~$ tar -xvf backup.tar
 argshift.sh
 argshift1.sh
 backup.tar.gz
@@ -663,7 +663,7 @@ whiletest.sh
 tar -xvf backup.tar
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ tar -xvf backup.tar
+@Aizen:~$ tar -xvf backup.tar
 argshift.sh
 argshift1.sh
 backup.tar.gz
@@ -719,7 +719,7 @@ gzip backup.tar
 ls .gz
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ gzip backup.tar
+@Aizen:~$ gzip backup.tar
 ls *.gz
 backup.tar.gz
 ```
@@ -734,9 +734,9 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ chmod 755 my-script.sh
-keerthivasan@Aizen:~$ ./my-script.sh
-keerthivasan@Aizen:~$
+@Aizen:~$ chmod 755 my-script.sh
+@Aizen:~$ ./my-script.sh
+@Aizen:~$
 ```
  
 cat << stop > herecheck.txt
@@ -792,8 +792,8 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ chmod 777 scriptest.sh
-keerthivasan@Aizen:~$ ./scriptest.sh 1 2 3
+@Aizen:~$ chmod 777 scriptest.sh
+@Aizen:~$ ./scriptest.sh 1 2 3
 ./scriptest.sh: line 1: #!/bin/sh: No such file or directory
 “File name is ./scriptest.sh ”
 File name is  scriptest.sh
@@ -813,14 +813,14 @@ The $$ is  460
 ls file1
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ls file1
+@Aizen:~$ ls file1
 file1
 ```
 
 echo $?
 ## OUTPUT 
 ```
-keerthivasan@Aizen:~$ echo $?
+@Aizen:~$ echo $?
 0
 ```
  
@@ -856,8 +856,8 @@ chmod 755 strcomp.sh
  ./strcomp.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ chmod 755 strcomp.sh
-keerthivasan@Aizen:~$ ./strcomp.sh
+@Aizen:~$ chmod 755 strcomp.sh
+@Aizen:~$ ./strcomp.sh
 baseball is less than hockey
 ```
 
@@ -887,7 +887,7 @@ fi
 ./psswdperm.sh
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sh psswdperm.sh
+@Aizen:~$ sh psswdperm.sh
 psswdperm.sh: 1: #!/bin/bash: not found
 “Sorry, you are not the owner of the /etc/passwd file”
 ```
@@ -938,7 +938,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ sh ifnested.sh
+@Aizen:~$ sh ifnested.sh
 ifnested.sh: 1: #!/bin/bash: not found
 “/home/keerthivasan The object exists, is it a file?”
 “No,/home/keerthivasan it is not a file!”
@@ -985,7 +985,7 @@ chmod 755 iftest.sh
 ./iftest.sh 
 ##OUTPUT
 ```
-keerthivasan@Aizen:~$ ./iftest.sh
+@Aizen:~$ ./iftest.sh
 ./iftest.sh: line 1: #!/bin/bash: No such file or directory
 “The test value 10 is greater than 5”
 “The values are different”
@@ -1063,7 +1063,7 @@ chmod 755 elifcheck.sh
 ./elifcheck.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./elifcheck.sh
+@Aizen:~$ ./elifcheck.sh
 ./elifcheck.sh: line 1: #!/bin/bash: No such file or directory
 Sorry, you are not allowed here
 ```
@@ -1084,7 +1084,7 @@ chmod 755 ifcompound.sh
 ./ifcompound.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./ifcompound.sh
+@Aizen:~$ ./ifcompound.sh
 ./ifcompound.sh: line 1: #!/bin/bash: No such file or directory
 The file exists and you can write to it
 ```
@@ -1109,7 +1109,7 @@ chmod 755 casecheck.sh
 ./casecheck.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./casecheck.sh
+@Aizen:~$ ./casecheck.sh
 Sorry, you are not allowed here
 ```
  
@@ -1129,7 +1129,7 @@ chmod 755 whiletest.sh
 ./whiletest.sh
  ## OUTPUT
  ```
-keerthivasan@Aizen:~$ ./whiletest.sh
+@Aizen:~$ ./whiletest.sh
 10
 9
 8
@@ -1157,7 +1157,7 @@ chmod 755 untiltest.sh
 ./untiltest.sh
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./untiltest.sh
+@Aizen:~$ ./untiltest.sh
 ./untiltest.sh: line 1: #using: command not found
 100
 75
@@ -1190,7 +1190,7 @@ chmod 755 forin1.sh
 ./forin1.sh
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forin1.sh
+@Aizen:~$ ./forin1.sh
 ./forin1.sh: line 1: #!/bin/bash: No such file or directory
 ./forin1.sh: line 2: #basic: command not found
 The next state is Alabama
@@ -1215,7 +1215,7 @@ chmod 755 forin2.sh
 ./forin2.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forin2.sh
+@Aizen:~$ ./forin2.sh
 ./forin2.sh: line 1: #!/bin/bash: No such file or directory
 ./forin2.sh: line 2: #: command not found
 “word:I”
@@ -1237,7 +1237,7 @@ chmod 755 forin3.sh
 ./forin3.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forin3.sh
+@Aizen:~$ ./forin3.sh
 ./forin3.sh: line 1: #!/bin/bash: No such file or directory
 ./forin3.sh: line 2: #: command not found
 word:I
@@ -1272,7 +1272,7 @@ chmod 777 forinfile.sh
 ./forinfile.sh
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forinfile.sh
+@Aizen:~$ ./forinfile.sh
  Visit beautiful cities
 ```
 
@@ -1290,7 +1290,7 @@ chmod 755 forctype.sh
 ./forctype.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forctype.sh
+@Aizen:~$ ./forctype.sh
 The value of i is 1
 The value of i is 2
 The value of i is 3
@@ -1312,7 +1312,7 @@ chmod 755 forctype.sh
 ./forctype1.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forctype1.sh
+@Aizen:~$ ./forctype1.sh
 1 - 5
 2 - 4
 3 - 3
@@ -1338,7 +1338,7 @@ chmod 755 fornested1.sh
 ./fornested1.sh 
  ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./fornested1.sh
+@Aizen:~$ ./fornested1.sh
 Starting loop 1:
  Inside loop: 1
  Inside loop: 2
@@ -1372,7 +1372,7 @@ chmod 755 forbreak.sh
 ./forbreak.sh 
 ## OUTPUT
 ```
- keerthivasan@Aizen:~$ ./forbreak.sh
+ @Aizen:~$ ./forbreak.sh
 Iteration number: 1
 Iteration number: 2
 The for loop is completed�
@@ -1397,7 +1397,7 @@ chmod 755 forcontinue.sh
 ./forcontinue.sh
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./forcontiune.sh
+@Aizen:~$ ./forcontiune.sh
 Iteration number: 1
 Iteration number: 2
 Iteration number: 4
@@ -1418,7 +1418,7 @@ chmod 755 exread.sh
 ./exread.sh 
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./exread.sh
+@Aizen:~$ ./exread.sh
 Enter your name: Keerthivasan
 Hello Keerthivasan, welcome to my program.
 ```
@@ -1434,7 +1434,7 @@ chmod 755 exread1.sh
 ./exread1.sh 
 ## OUTPUT
  ```
-keerthivasan@Aizen:~$ ./exread1.sh
+@Aizen:~$ ./exread1.sh
 Enter your name: Keerthivasan
 Hello Keerthivasan, welcome to my program.
 ```
@@ -1458,12 +1458,12 @@ fi
 
 ./funcex.sh 
 ```
-keerthivasan@Aizen:~$ ./funcex.sh
+@Aizen:~$ ./funcex.sh
 Usage: badtest1 a b
 ```
 ./funcex.sh 1 2
 ```
-keerthivasan@Aizen:~$ ./funcex.sh 1 2
+@Aizen:~$ ./funcex.sh 1 2
 The result is func 1 2
 ```
  
@@ -1480,7 +1480,7 @@ chmod 777 argshift.sh
 ./argshift.sh 1 2 3
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./argshift.sh 1 2 3
+@Aizen:~$ ./argshift.sh 1 2 3
 1
 2
 3
@@ -1504,7 +1504,7 @@ chmod 777 argshift.sh
 ./argshift.sh 1 2 3
 ## OUTPUT
 ```
-keerthivasan@Aizen:~$ ./argshift.sh 1 2 3
+@Aizen:~$ ./argshift.sh 1 2 3
 1
 2
 3
@@ -1542,7 +1542,7 @@ ubcdfghj
 awk -f nc.awk data.dat
 ## OUTPUT 
  ```
-keerthivasan@Aizen:~$ awk -f nc.awk data.dat
+@Aizen:~$ awk -f nc.awk data.dat
 7        bcdfghj
 8        abcdfghj
 7        bcdfghj
@@ -1587,7 +1587,7 @@ chmod 755 palindrome.sh
 ./palindrome.sh 
 ## OUTPUT 
 ```
-keerthivasan@Aizen:~$ ./palindrome.sh
+@Aizen:~$ ./palindrome.sh
 Enter the number
 357
 Number is NOT palindrome
